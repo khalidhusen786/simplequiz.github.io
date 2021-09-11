@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-box custom-box">
+    <h3>Instruction</h3>
+    <p>Total no. of Questions <span class="total-question">5</span></p>   
+    <button class="button-start" onclick="StartQuiz()" >Start Quiz</button> 
+</div>
+
+<div class="quiz-box custom-box hide">
+    
+    <div class="question-number"></div>
+    <div class="question-text"></div>
+    <div class="option-container">
+        
+        
+        
+    
+
+    </div>
+   
+    <button class="next-button" onclick="next()">Next </button>
+    <div class="answer-indicator">
+        
+    </div>
+</div>
+<div class="result-box custom-box hide">
+    <div class="quiz-result">Quiz Result</div>
+    <table>
+        <tr>
+            <td>Total no. of question</td>
+            <td><span class="Total-question"></span></td>
+        </tr>
+
+        <tr>
+            <td>Attemp</td>
+            <td><span class="Total-attemp"></span></td>
+        </tr>
+
+        <tr>
+            <td>Correct</td>
+            <td><span class="Total-correct"></span></td>
+        </tr>
+
+        <tr>
+            <td>Wrong</td>
+            <td><span class="Total-wrong"></span></td>
+        </tr>
+
+        <tr>
+            <td>Percentage</td>
+            <td><span class="Total-percentage"></span></td>
+        </tr>
+
+        <tr>
+            <td>Your Score</td>
+            <td><span class="Total-score"></span></td>
+        </tr>
+
+
+
+
+
+
+
+
+    </table>
+    
+    <button class="TryAgain" onclick="tryagain()">Try Again</button>
+    <button class="GoHome" onclick="gohome()">Go Home</button>
+
+</div>
+<script src="home.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
